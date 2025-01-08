@@ -1,0 +1,112 @@
+/* Container principal */
+.contact-container {
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Título */
+.contact-title {
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+/* Layout principal */
+.contact-content {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+/* Mapa */
+.contact-map {
+  flex: 1;
+  min-height: 300px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+/* Formulário */
+.contact-form {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.contact-form label {
+  margin-bottom: 5px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.contact-form button {
+  padding: 10px;
+  background-color: #00a8cc;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Informações gerais */
+.contact-info {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #007a99; /* Azul escuro */
+  color: white;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Colunas */
+.contact-info div {
+  flex: 1;
+  padding: 10px;
+}
+
+/* Títulos das colunas */
+.contact-info h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+/* Texto dentro das colunas */
+.contact-info p {
+  margin: 5px 0;
+  font-size: 16px;
+}
+
+/* Links */
+.contact-info a {
+  color: white;
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .contact-content {
+    flex-direction: column;
+  }
+
+  .contact-info {
+    flex-direction: column;
+  }
+
+  .contact-info div {
+    padding: 5px;
+  }
+}

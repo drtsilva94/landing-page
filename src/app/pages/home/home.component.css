@@ -1,0 +1,183 @@
+/* Estilo geral */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Container principal */
+.about-container {
+  width: 100%;
+  padding: 40px 20px;
+  box-sizing: border-box;
+}
+
+/* Título principal */
+.about-title {
+  text-align: center;
+  font-size: 2.5em;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #004d66;
+}
+
+/* Sessão principal - Texto e imagem lado a lado */
+.about-content {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+/* Texto */
+.about-text {
+  flex: 1;
+  font-size: 1.1em;
+  line-height: 1.6;
+  color: #333;
+  padding-left: 15%;
+  padding-right: 5%;
+  text-align: justify;
+}
+
+/* Imagem destacada */
+.about-image {
+  flex: 1;
+  text-align: center;
+}
+
+.about-image img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 10px;
+}
+
+/* Header - Navegação */
+nav {
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+  background-color: #f8f9fa;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #007bff;
+  font-weight: bold;
+}
+nav a:hover {
+  color: #0056b3;
+}
+
+/* Seção sobre a empresa */
+.about-company {
+  text-align: center;
+  padding: 20px;
+}
+.company-image img {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+.company-summary h2 {
+  font-size: 28px;
+  margin-top: 20px;
+}
+.company-summary p {
+  font-size: 16px;
+  color: #555;
+}
+
+/* Produtos em destaque */
+.featured-products {
+  padding: 20px;
+  text-align: center;
+}
+.featured-products h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Botões estilo 'Mais' */
+.see-more {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: white;
+  color: #007b8f;
+  border: 2px solid #007b8f;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  text-align: center;
+}
+
+.see-more:hover {
+  background-color: white;
+  color: #007b8f;
+  text-decoration: none;
+}
+
+/* Informações de contato */
+.contact-info {
+  display: flex;
+  background-color: #007b8f; /* Azul */
+  color: white; /* Texto branco */
+  padding: 20px;
+}
+
+/* Container de contato */
+.contact-container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Mapa */
+.contact-map {
+  width: 40%;
+}
+
+/* Detalhes */
+.contact-details {
+  width: 58%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.contact-details div {
+  margin: 10px;
+  color: white; /* Força o texto a ficar branco */
+}
+
+/* Estilo dos textos dentro das informações */
+.contact-details h2,
+.contact-details p {
+  color: white !important; /* Força a cor branca */
+}
+
+/* Botão na seção de contato */
+.contact-info .see-more {
+  margin: 20px auto 0;
+  padding: 10px 20px;
+  background-color: white;
+  color: #007b8f;
+  border: 2px solid #007b8f;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  text-align: center;
+}
+
+.contact-info .see-more:hover {
+  background-color: white;
+  color: #007b8f;
+  text-decoration: none;
+}

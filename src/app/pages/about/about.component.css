@@ -1,0 +1,96 @@
+/* Estilização da página Sobre Nós */
+
+/* Container principal */
+.about-container {
+  width: 100%;
+  padding: 40px 20px; /* Espaçamento interno */
+  box-sizing: border-box; /* Inclui padding na largura total */
+}
+
+/* Título principal */
+.about-title {
+  text-align: center; /* Centraliza o título */
+  font-size: 2.5em; /* Tamanho maior para o título */
+  font-weight: bold; /* Negrito */
+  margin-bottom: 20px; /* Espaçamento abaixo do título */
+  color: #004d66; /* Cor azul escuro */
+}
+
+/* Centralização do título "Nosso compromisso" no meio da página com margem superior */
+.section-title {
+  text-align: center; /* Centraliza o texto horizontalmente */
+  font-size: 2.5em; /* Manter o mesmo tamanho da fonte */
+  font-weight: bold; /* Negrito */
+  color: #004d66; /* Cor do texto */
+  margin: 0; /* Remove margens para um posicionamento mais preciso */
+  padding: 0; /* Remove espaçamento extra */
+  display: block; /* Garante que o título ocupe a largura necessária */
+  width: 100%; /* O título ocupa 100% da largura */
+  margin-top: 10px; /* Margem superior pequena para afastar sutilmente */
+}
+
+/* Sessão principal - Texto e imagem lado a lado */
+.about-content {
+  display: flex; /* Organiza os elementos lado a lado */
+  align-items: center; /* Alinha verticalmente */
+  gap: 40px; /* Espaçamento entre texto e imagem */
+}
+
+/* Texto */
+.about-text {
+  flex: 1; /* Ocupa o espaço disponível */
+  font-size: 1.1em; /* Tamanho do texto */
+  line-height: 1.6; /* Altura entre as linhas */
+  color: #333; /* Cor do texto */
+  padding-left: 15%; /* Move o texto para a direita */
+  padding-right: 5%; /* Espaço à direita */
+  text-align: justify; /* Alinha o texto justificado */
+}
+
+/* Imagem destacada */
+.about-image {
+  flex: 1; /* Ocupa o espaço disponível */
+  text-align: center; /* Centraliza a imagem */
+}
+
+.about-image img {
+  width: 100%; /* Imagem ocupa todo o espaço disponível */
+  max-width: 400px; /* Limita o tamanho máximo da imagem */
+  border-radius: 10px; /* Cantos arredondados */
+}
+
+/* Blocos de informações adicionais (lado a lado) */
+.about-info-section {
+  margin-top: 40px; /* Espaçamento superior */
+  display: flex; /* Organiza os blocos lado a lado */
+  flex-wrap: wrap; /* Permite quebrar linha em telas menores */
+  justify-content: center; /* Centraliza os blocos */
+  gap: 20px; /* Espaçamento entre os blocos */
+}
+
+/* Estilo dos blocos */
+.info-box {
+  flex: 1; /* Faz os blocos ocuparem o mesmo espaço */
+  max-width: 220px; /* Tamanho máximo de cada bloco */
+  padding: 20px; /* Espaçamento interno */
+  text-align: center; /* Centraliza o conteúdo */
+  background-color: #007a99; /* Cor azul escuro */
+  color: white; /* Texto branco */
+  border-radius: 10px; /* Cantos arredondados */
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+  .about-content {
+    flex-direction: column; /* Empilha texto e imagem */
+  }
+
+  .about-text {
+    padding-left: 0; /* Remove padding lateral */
+    padding-right: 0; /* Remove padding lateral */
+  }
+
+  .about-info-section {
+    flex-direction: column; /* Empilha os blocos na vertical */
+  }
+}

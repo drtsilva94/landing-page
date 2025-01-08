@@ -1,0 +1,26 @@
+/* Container da imagem */
+.banner-container {
+  width: 100%;
+  height: 100vh; /* Ocupa a altura inteira da tela */
+  position: relative; /* Permite posicionar texto no futuro */
+  overflow: hidden; /* Evita rolagem lateral */
+}
+
+/* Imagem */
+.banner-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Garante que a imagem cubra todo o espaço */
+}
+
+/* Texto (para adicionar futuramente) */
+.banner-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+}

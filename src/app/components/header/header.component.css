@@ -1,0 +1,31 @@
+/* Estilo do Header */
+.navbar {
+  background-color: white; /* Azul mais claro */
+  padding: 20px 40px; /* Altura maior */
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Centraliza o conteúdo */
+}
+
+/* Menu */
+.nav-menu {
+  list-style: none;
+  display: flex;
+  gap: 30px; /* Espaço entre os itens */
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilo dos links */
+.nav-menu li a {
+  text-decoration: none;
+  color: #64b5f6;
+  font-weight: bold;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+/* Hover nos links */
+.nav-menu li a:hover {
+  color: #003f7f; /* Azul mais escuro */
+}
