@@ -1,13 +1,32 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centraliza os elementos horizontalmente */
+}
+
+main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centraliza o conteúdo horizontalmente */
+  padding-top: 20px; /* Espaço no topo da página */
+}
+
 .galeria-receitas {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
-  justify-content: center;
-  margin: 20px 0;
+  justify-content: center; /* Centraliza horizontalmente as receitas */
+  align-items: flex-start; /* Alinha ao topo */
+  margin: 0 auto;
+  padding: 20px 0; /* Espaçamento superior e inferior */
+  max-width: 1200px; /* Limita a largura máxima da galeria */
 }
 
 .receita-item {
-  width: 250px;
+  width: 250px; /* Largura fixa */
   cursor: pointer;
   text-align: center;
   transition: transform 0.2s;
@@ -18,8 +37,10 @@
 }
 
 .foto-receita {
-  width: 100%;
-  border-radius: 10px;
+  width: 100%; /* Garante que a imagem ocupe toda a largura */
+  height: 180px; /* Altura fixa para manter proporções iguais */
+  object-fit: cover; /* Ajusta a imagem sem distorção */
+  border-radius: 10px; /* Bordas arredondadas */
 }
 
 .nome-receita {
@@ -31,13 +52,14 @@
 
 .detalhes-receita {
   max-width: 800px;
-  margin: 40px auto;
+  margin: 20px auto;
   padding: 20px;
   border-top: 2px solid #ddd;
 }
 
 .foto-detalhe {
   width: 100%;
+  height: auto;
   border-radius: 10px;
   margin-bottom: 20px;
 }

@@ -1,0 +1,11 @@
+<div class="receitas-preview-container">
+  <h2>Receitas em Destaque</h2>
+  <div class="galeria-receitas">
+    <!-- Loop para exibir as receitas -->
+    <div class="receita-item" *ngFor="let receita of receitas.slice(0, 4)">
+      <img [src]="receita.imagem" [alt]="receita.nome" class="foto-receita" />
+      <p class="nome-receita">{{ receita.nome }}</p>
+    </div>
+  </div>
+  <button class="botao-mais" (click)="irParaReceitas()">Mais</button>
+</div>

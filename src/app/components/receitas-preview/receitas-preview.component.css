@@ -1,0 +1,63 @@
+.receitas-preview-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 28px;
+  color: #004080; /* Azul escuro para o tema */
+  margin-bottom: 20px;
+}
+
+.galeria-receitas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Centraliza horizontalmente */
+  gap: 20px; /* Espaçamento entre os itens */
+}
+
+.receita-item {
+  width: 220px;
+  background-color: #f9f9f9; /* Fundo claro */
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para destacar */
+  overflow: hidden;
+  transition: transform 0.2s, box-shadow 0.2s;
+  text-align: center;
+}
+
+.receita-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+.foto-receita {
+  width: 100%;
+  height: 150px; /* Altura fixa para uniformizar */
+  object-fit: cover; /* Ajusta a imagem sem distorção */
+}
+
+.nome-receita {
+  margin: 10px 0;
+  font-size: 16px;
+  font-weight: bold;
+  color: #333; /* Cor neutra */
+}
+
+.botao-mais {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #004080; /* Azul do tema */
+  color: #fff;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.botao-mais:hover {
+  background-color: #002d5c; /* Azul mais escuro */
+}
