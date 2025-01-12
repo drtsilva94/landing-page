@@ -1,6 +1,6 @@
 /* Estilização da página Produtos */
 
-/* Container da página de produtos */
+/* Container principal */
 .products-container {
   width: 100%;
   padding: 40px 20px;
@@ -8,7 +8,7 @@
   text-align: center; /* Centraliza o título */
 }
 
-/* Título da seção de produtos */
+/* Título da seção */
 .section-title {
   font-size: 2.5em;
   font-weight: bold;
@@ -19,51 +19,54 @@
 /* Grade de produtos */
 .products-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* 4 colunas fixas para os itens */
-  gap: 20px; /* Espaçamento entre os itens da grade */
-  margin-top: 20px; /* Espaçamento superior */
+  grid-template-columns: repeat(4, 1fr); /* 4 colunas fixas */
+  gap: 20px; /* Espaçamento entre os itens */
+  margin-top: 20px;
 }
 
 /* Estilo de cada item do produto */
 .product-item {
-  background-color: #f4f4f4; /* Cor de fundo do item */
-  padding: 20px;
+  background-color: #f4f4f4; /* Fundo claro */
+  width: 150px; /* Definindo largura fixa */
+  height: 150px; /* Definindo altura fixa para quadrado */
+  padding: 10px;
   text-align: center; /* Centraliza o conteúdo */
   border-radius: 10px; /* Bordas arredondadas */
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 /* Imagem do produto */
 .product-item img {
-  width: 100%; /* Imagem ocupa toda a largura disponível */
-  max-width: 150px; /* Limita o tamanho máximo da imagem */
-  height: auto;
-  border-radius: 8px; /* Bordas arredondadas na imagem */
-  margin-bottom: 10px; /* Espaçamento abaixo da imagem */
+  width: 80px; /* Tamanho fixo da imagem */
+  height: 80px; /* Proporção fixa */
+  border-radius: 8px; /* Bordas arredondadas */
+  margin-bottom: 10px;
 }
 
 /* Nome do produto */
 .product-item h3 {
-  font-size: 1.2em;
+  font-size: 0.9em;
   color: #333;
   margin: 0;
 }
 
-/* Responsividade para telas menores (menos de 1024px) */
+/* Responsividade para telas menores */
 @media (max-width: 1024px) {
   .products-grid {
-    grid-template-columns: repeat(3, 1fr); /* 3 colunas em telas menores */
+    grid-template-columns: repeat(3, 1fr); /* 3 colunas para telas menores */
   }
 }
 
-/* Responsividade para telas menores (menos de 768px) */
 @media (max-width: 768px) {
   .products-grid {
-    grid-template-columns: repeat(2, 1fr); /* 2 colunas em telas menores */
+    grid-template-columns: repeat(2, 1fr); /* 2 colunas para telas pequenas */
   }
 }
 
-/* Responsividade para telas ainda menores (menos de 480px) */
 @media (max-width: 480px) {
   .products-grid {
     grid-template-columns: 1fr; /* 1 coluna em telas muito pequenas */

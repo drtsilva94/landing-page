@@ -1,0 +1,83 @@
+.galeria-receitas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.receita-item {
+  width: 250px;
+  cursor: pointer;
+  text-align: center;
+  transition: transform 0.2s;
+}
+
+.receita-item:hover {
+  transform: scale(1.05);
+}
+
+.foto-receita {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.nome-receita {
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #004080; /* Azul do tema */
+}
+
+.detalhes-receita {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  border-top: 2px solid #ddd;
+}
+
+.foto-detalhe {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+h2 {
+  color: #004080;
+  text-align: center;
+}
+
+.ingredientes,
+.modo-fazer {
+  margin-top: 20px;
+}
+
+ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.modo-fazer p {
+  margin-bottom: 10px;
+}
+
+/* Estilo do botão Voltar */
+.botao-voltar {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  background-color: #004080; /* Azul do tema */
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.botao-voltar:hover {
+  background-color: #002d5c; /* Azul mais escuro */
+}

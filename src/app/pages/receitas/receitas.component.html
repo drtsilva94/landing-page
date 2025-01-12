@@ -1,0 +1,37 @@
+<div class="galeria-receitas">
+  <!-- Galeria de receitas: lista de receitas com imagem e nome -->
+  <div class="receita-item" *ngFor="let receita of receitas" (click)="exibirDetalhes(receita)">
+    <img [src]="receita.imagem" alt="{{ receita.nome }}" class="foto-receita">
+    <p class="nome-receita">{{ receita.nome }}</p>
+  </div>
+</div>
+
+<!-- Detalhes da receita selecionada -->
+<div class="detalhes-receita" *ngIf="receitaSelecionada">
+  <!-- Foto da receita -->
+  <img [src]="receitaSelecionada.imagem" alt="{{ receitaSelecionada.nome }}" class="foto-detalhe">
+  <h2>{{ receitaSelecionada.nome }}</h2>
+
+  <!-- Ingredientes -->
+  <div class="ingredientes">
+    <h3>Ingredientes</h3>
+    <ul>
+      <li *ngFor="let ingrediente of receitaSelecionada.ingredientes">
+        {{ ingrediente }}
+      </li>
+    </ul>
+  </div>
+
+  <!-- Modo de Fazer -->
+  <div class="modo-fazer">
+    <h3>Modo de Fazer</h3>
+    <p *ngFor="let passo of receitaSelecionada.modoFazer">
+      {{ passo }}
+    </p>
+  </div>
+
+  <!-- Botão para voltar -->
+  <div class="voltar">
+    <button (click)="voltar()">Voltar</button>
+  </div>
+</div>
