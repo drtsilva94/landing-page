@@ -5,7 +5,7 @@ import { ProductListComponent } from '../../components/product-list/product-list
 @Component({
   selector: 'app-home',
   standalone: true, // Adiciona standalone
-  imports: [BannerComponent,ProductListComponent], // Importa o componente Banner
+  imports: [ProductListComponent], // Importa o componente Banner
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css'] // Corrige o nome para styleUrls
 })
